@@ -1,0 +1,67 @@
+<em>      The <em> tag will generally render as italic emphasis.
+<strong>  The <strong> will generally render as bold emphasis.
+
+ex.
+<p><strong>The Nile River</strong> is the <em>longest</em> river in the world, 
+measuring over 6,850 kilometers long 
+(approximately 4,260 miles).</p>
+
+<br>    Line break
+
+ex.
+<p>The Nile River is the longest river <br> in the world, measuring over 6,850 <br> kilometers long 
+(approximately 4,260 <br> miles).</p>
+
+Unordered Lists (<ul> <li>)
+An unordered list outlines individual list items with a bullet point.
+
+ex.
+<ul>
+  <li>Limes</li>
+  <li>Tortillas</li>
+  <li>Chicken</li>
+</ul>
+
+Ordered lists (<ol>) 
+they are like unordered lists, except that each list item is numbered. 
+They are useful when you need to list different steps in a process or rank items for first to last.
+
+ex.
+<ol>
+  <li>Preheat the oven to 350 degrees.</li>
+  <li>Mix whole wheat flour, baking soda, and salt.</li>
+  <li>Cream the butter, sugar in separate bowl.</li>
+  <li>Add eggs and vanilla extract to bowl.</li>
+</ol>
+
+Images
+The <img> tag allows you to add an image to a web page.
+The <img> tag has a required attribute called src. 
+The src attribute must be set to the image's source, or the location of the image.
+
+ex.
+<img src="image-location.jpg" />
+
+Image Alts
+The alt attribute, which means alternative text, brings meaning to the images on our sites.
+
+ex.
+<img src="#" alt="A field of yellow sunflowers" />
+
+Videos
+The <video> tag requires a src attribute with a link to the video source. 
+The <video> element requires an opening and a closing tag.
+The controls attribute instructs the browser to include basic video controls: pause, play and skip.
+"Video not supported", will only be displayed if the browser is unable to load the video.
+
+ex.
+<video src="myVideo.mp4" width="320" height="240" controls>
+  Video not supported
+</video>
+
+
+
+
+
+
+
