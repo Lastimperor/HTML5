@@ -27,3 +27,39 @@ Metadata is information about the page that isn't displayed directly on the web 
 
 - Page Titles
 
+the <head> element can contain metadata about the web page 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Coding Journal</title>
+  </head>
+</html>
+
+- Linking to Other Web Pages
+
+You can add links to a web page by adding an anchor element <a> and including the text of the link 
+in between the opening and closing tags with href attribute. 
+This attribute stands for hyperlink reference and is used to link to a path, or the address to where a file is located
+
+ex. <a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+
+- Opening Links in a New Window
+
+The target attribute specifies how a link should open.
+For a link to open in a new window, the target attribute requires a value of _blank. 
+The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.
+
+ex. <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
+
+- Linking to Relative Page
+
+
+
+
+
+
+
+
+
+
