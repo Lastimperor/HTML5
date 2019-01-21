@@ -44,6 +44,8 @@ This attribute stands for hyperlink reference and is used to link to a path, or 
 
 ex. <a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
 
+LINKING
+
 - Opening Links in a New Window
 
 The target attribute specifies how a link should open.
@@ -53,6 +55,40 @@ The target attribute can be added directly to the opening tag of the anchor elem
 ex. <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
 
 - Linking to Relative Page
+
+When making multi-page static websites, web developers often store HTML files in the root directory, 
+or a main folder where all the files for the project are stored. 
+As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
+
+project-folder/
+|—— about.html
+|—— contact.html
+|—— index.html
+
+The example above shows three different files — about.html, contact.html, and index.html in one folder.
+
+Because the files are stored in the same folder, we can link web pages together using a relative path.
+
+ex. <a href="./contact.html">Contact</a>
+
+On the web page, Contact will appear as a link.
+
+A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) 
+versus an absolute path (a full URL, like https://www.codecademy.com/learn/learn-html which is stored in a different folder). 
+The ./ in ./index.html tells the browser to look for the file in the current folder.
+
+- Linking At Will
+
+HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. 
+With this technique, it's possible to turn images into links by simply wrapping the <img> element with an <a> element.
+
+ex. <a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+
+an image of a prickly pear has been turned into a link by wrapping the outside of the <img> element with an <a> element.
+
+- Linking to Same Page
+
+
 
 
 
