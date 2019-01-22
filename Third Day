@@ -41,9 +41,10 @@ EXTRAS
 - Whitespace and indentation
 
 Programmers use two tools to visualize the relationship between elements: whitespace and indentation.
-ex.
+The spaces are inserted using the space and tab bars on your keyboard.
+The World Wide Web Consortium, or W3C recommends 2 spaces of indentation when writing HTML code. 
 
-<body><p>Paragraph 1</p><p>Paragraph 2</p></body>
+ex. <body><p>Paragraph 1</p><p>Paragraph 2</p></body>
 
 You have to read the entire line to know what elements are present. 
 Compare  to this:
@@ -53,7 +54,10 @@ Compare  to this:
     <p>Paragraph 2</p>
 </body>
 
+- Comments
 
+Comments begin with <!-- and end with -->. Any characters in between will be ignored by your browser.
 
+ex. <!-- <p> Test Code </p> -->
 
 
