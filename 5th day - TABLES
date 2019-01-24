@@ -1,0 +1,86 @@
+- Create a Table
+
+Before displaying data, you must first create the table that will contain the data by using the <table> element.
+
+<table>
+
+</table>
+
+The <table> element will contain all of the tabular data you plan on displaying.
+
+- Table Rows
+
+The first step in entering data into the table is to add rows using the table row element: <tr>.
+
+<table>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</table>
+In the example above, two rows have been added to the table.
+
+- Table Data
+
+Rows aren't sufficient to add data to a table. Each cell element must also be defined. 
+In HTML, you can add data using the table data element: <td>.
+
+<table>
+  <tr>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+
+- Table Headings
+
+Table data doesn't make much sense without titles to describe what the data represents.
+
+To add titles to rows and columns, you can use the table heading element: <th>.
+Just like table data, a table heading must be placed within a table row.
+
+<table>
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Temperature</th>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+
+First, a new row was added to hold the three headings: a blank heading, a Saturday heading, and a Sunday heading. 
+The blank heading creates the extra table cell necessary to align the table headings correctly over the data they correspond to.
+
+In the second row, one table heading was added as a row title: Temperature.
+
+Note, also, the use of the scope attribute, which can take one of two values:
+
+row - this value makes it clear that the heading is for a row.
+col - this value makes it clear that the heading is for a column.
+
+- Table Borders
+
+n older versions of HTML, a border could be added to a table using the border attribute and setting it equal to an integer. 
+This integer would represent the thickness of the border.
+
+<table border="1">
+  <tr>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+
+The browser will likely still interpret your code correct if you use the border attribute, but that doesn't mean the attribute should be used. 
+Instead, you can achieve the same effect using CSS.
+
+table, td {
+  border: 1px solid black;
+}
+
+- Spanning Columns
+
+
