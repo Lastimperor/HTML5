@@ -1,0 +1,30 @@
+- How a Form Works
+
+We can think of the internet as a network of computers which send and receive information. 
+Computers need an HTTP request to know how to communicate.
+
+The <form> element is a great tool for collecting information, but then we need to send that information somewhere else for processing.
+
+ex.
+
+<form action="/example.html" method="POST">
+  <h1>Creating a form</h1>
+  <p>Looks like you want to learn how to create an HTML form.</p>
+</form>
+
+the action attribute determines where the information is sent.
+the method attribute is assigned a HTTP verb that is included in the HTTP request. 
+
+- Text Input
+
+If we want to create an input field in our <form>, we'll need the help of the <input> element.
+
+The <input> element has:
+a type attribute which determines how it renders on the web page and what kind of data it can accept.
+a name attribute for the <input> — without the name attribute, information in the <input> won't be sent when the <form> is submitted.
+default value for the value attribute so that users have a pre-filled text field when they first see the rendered form. 
+
+ex. <input type="text" name="username" value="Davie"> 
+
+- Adding a Label
+
