@@ -83,4 +83,69 @@ table, td {
 
 - Spanning Columns
 
+For example, a personal calendar could have events that span across multiple hours, or even multiple days.
 
+Data can span columns using the colspan attribute. 
+The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td>
+    <td>Back in Town</td>
+  </tr>
+</table>
+In the example above, the data Out of Town spans the Monday and Tuesday table headings using the value 2 (two columns). 
+The data Back in Town appear only under the Wednesday heading.
+
+- Spanning Rows
+
+Data can also span multiple rows using the rowspan attribute.
+
+The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). 
+It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.
+
+- Table Body
+
+Long tables can be sectioned off using the table body element: <tbody>.
+
+- Table Head
+
+When a table's body is sectioned off, however, it also makes sense to section off the table's headings using the <thead> element.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  - Table Footer
+  
+The bottom part of a long table can also be sectioned off using the <tfoot> element.
+
+ ...
+ </tbody>
+    <tfoot>
+      <td>Total</td>
+      <td>28</td>
+    </tfoot>
+  </table>
+
+- Styling with CSS
+
+You can use CSS to style tables just like you have done in the past. 
+Specifically, you can change style the various aspects mentioned above.
+
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
