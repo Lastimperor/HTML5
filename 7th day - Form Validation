@@ -1,8 +1,45 @@
 Validation is the concept of checking user provided data against the required data
 
 There are different types of validation. 
-One type is server-side validation, this happens when data is sent to another machine (typically a server) for validation. 
+One type is 'server-side validation', this happens when data is sent to another machine (typically a server) for validation. 
 An example: 
-The form on the login page accepts username and password input, then sends the data to a server which checks that the pair matches up correctly.
+The form on the login page accepts username and password input, 
+then sends the data to a server which checks that the pair matches up correctly.
 
+we use 'client-side validation' if we want to check the data on the browser (the client). 
+This validation occurs before data is sent to the server. 
+Different browsers implement client-side validation differently, but it leads to the same outcome.
 
+- HTML5's built-in client-side validation. 
+Shared among the different browsers and more benefits: 
+ -saves us time from having to send information to the server and wait for the server to send back confirmation or rejection of the data. 
+ -protect our server from malicious code or data from a malicious user. 
+ -quickly feedback to users for specific fields rather than having them fill in a form again if the data they input into the form was rejected.
+ 
+- Requiring an Input
+
+Sometimes we have fields in our <form>s which are not optional, there must be information provided before we can submit it. 
+To enforce this rule, we can add the required attribute to an <input> element. 
+
+<form action="/example.html" method="POST">
+  <label for="allergies">Do you have any dietary restrictions?</label>
+  <br>
+  <input id="allergies" name="allergies" type="text" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+ - Set a Minumum and Maximum
+ 
+ Another built-in validation we can use is to assign a minimum or maximum value for a number field, 
+ e.g. <input type="number"> and <input type="range">
+ 
+ <form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form>
+
+- Checking Text Length
+ 
+ 
