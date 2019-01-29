@@ -1,16 +1,3 @@
-<em>      The <em> tag will generally render as italic emphasis.
-<strong>  The <strong> will generally render as bold emphasis.
-
-ex.
-<p><strong>The Nile River</strong> is the <em>longest</em> river in the world, 
-measuring over 6,850 kilometers long 
-(approximately 4,260 miles).</p>
-
-<br>    Line break
-
-ex.
-<p>The Nile River is the longest river <br> in the world, measuring over 6,850 <br> kilometers long 
-(approximately 4,260 <br> miles).</p>
 
 Unordered Lists (<ul> <li>)
 An unordered list outlines individual list items with a bullet point.
