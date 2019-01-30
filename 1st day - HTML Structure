@@ -1,16 +1,47 @@
 
+- HTML Anatomy
 
+HTML is composed of elements. These elements structure the webpage and define its content.
 
-<body>
-<h1>
-<div>
-<p>
-<span>
+Let's quickly review each part of the element pictured:
+
+HTML element (or simply, element) — a unit of content in an HTML document formed by HTML tags and the text or media it contains.
+
+HTML Tag — the element name, surrounded by an opening (<) and closing (>) angle bracket.
+
+Opening Tag — the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.
+
+Content — The information (text or other elements) contained between the opening and closing tags of an HTML element.
+
+Closing tag — the second HTML tag used to end an HTML element. 
+Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.
+
+- The Body
+
+- HTML Structure
+ 
+- Headings
+
+- Divs
+
+- Attributes
+
+Attributes are content added to the opening tag of an element and can be used in several different ways, 
+from providing information to changing styling. 
+Attributes are made up of the following two parts:
+
+The name of the attribute
+The value of the attribute
+
+We can use the id attribute to specify different content (such as <div>s) and is really helpful when you use an element more than once
 
 Attributes: 'id='
 ex. <div id="badge">
 
+- Displaying Text
 
+
+- Styling Text
 
 <em>      The <em> tag will generally render as italic emphasis.
 <strong>  The <strong> will generally render as bold emphasis.
@@ -19,6 +50,8 @@ ex.
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, 
 measuring over 6,850 kilometers long 
 (approximately 4,260 miles).</p>
+
+- Line Breaks
 
 <br>    Line break
 
