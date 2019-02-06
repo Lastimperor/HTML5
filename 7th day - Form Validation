@@ -41,5 +41,20 @@ To enforce this rule, we can add the required attribute to an <input> element.
 </form>
 
 - Checking Text Length
+
+There are certainly cases where we wouldn't want our users typing more than a certain number of characters 
+(think about the message cap for Twitter). 
+We might even want to set a minimum number of characters.
+
+I can use minlength and maxlength attribute and set a value
+
+<form action="/example.html" method="POST">
+  <label for="summary">Summarize your fillings in less than 250 characters</label>
+  <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+  <input type="submit" value="Submit">
+</form>
+
+- Matching a Pattern
+ 
  
  
