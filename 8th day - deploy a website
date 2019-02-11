@@ -32,6 +32,73 @@ Done installing documentation for jekyll
 
 - Generate a Static Site
 
+we'll use Jekyll's new command and specify a directory name. 
 
+The directory will contain all of your site's default content that can be customized later.
+
+For example, to generate a website in a directory called my-portfolio-site, we can type:
 
 'jekyll new my-portfolio-site'
+
+The command will create a directory called my-portfolio-site and fill it with Jekyll's site content.
+
+Use the 'ls' command to verify that the directory was successfully generated.
+
+- Preview Your Site Locally
+
+ You can use Jekyll to view your site locally.
+ This means that you're viewing the site on your own computer. 
+ The site is not, however, available on the public Internet.
+ 
+ You can view your site locally by using Jekyll's serve command, like so:
+
+'jekyll serve'
+
+This command starts a local server that will server the files to your computer. 
+The serve command will also come in handy when you want to preview changes you make to your site.
+
+To view your site locally, you must first navigate to your site's directory, using the cd command.
+
+'cd my-portfolio-site'
+
+Next, use the serve command to start a local server.
+
+'jekyll serve'
+
+Then, navigate to http://localhost:4000 in the browser to view your site.
+
+- Jekyll's Directory Structure (https://jekyllrb.com/docs/structure/)
+
+The website that Jekyll generates differs from a website that you'd create on your own. 
+It offers a standard directory structure, as well as components that help speed up development.
+
+It's important to understand Jekyll's default directory structure and contents of your site:
+
+_config.yml - This is a configuration file that contains many values that need to be edited only once. 
+for example, your site's title, your e-mail, and more. 
+
+_includes/ - This directory contains all the partials (code templates that keep you from repeating your code over and over) 
+that your site uses to load common components, like the header and the footer.
+
+_posts/ - This directory is where blog posts are stored. 
+
+_layouts/ - This directory contains templates that are used to style certain types of posts within the site. 
+For example, new blog posts will use the HTML layout defined in post.html.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
