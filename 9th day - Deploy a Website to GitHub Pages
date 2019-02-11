@@ -42,4 +42,23 @@ In the terminal, you can add the remote with the following command:
 
 Again, you would replace your-user-name with your actual GitHub username.
 
+- Commit Your Changes
+
+Git also needs to know exactly which files should be pushed to your repo.
+
+In this case, we want to push all of your site's content to the repo. 
+This means we will do the following two things (in order):
+
+1. Add all of your site's content to the Git staging area using 'git add .'
+2. Commit (save) your changes using 'git commit -m "Save my work"'
+
+- Deploy Your Site
+
+This time, we'll use Git's push command and push the contents of your site up to your repo using the following command:
+
+'git push -u origin master'
+
+
+
+
 
