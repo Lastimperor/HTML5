@@ -1,0 +1,45 @@
+DEPLOY YOUR WEBSITE TO GITHUB PAGES
+
+- Create Your Repo
+
+In order to publish your site using GitHub Pages, you'll need to create a repository (repo) on GitHub.
+
+Your repo's name must also follow GitHub Pages' naming convention, otherwise your site will not publish at all.
+
+Specifically, the repo's name must be in the following format:
+
+your-user-name.github.io
+
+- Initialize Your Repo
+
+Great! Now that you've created a repo with the proper naming convention, let's upload your site to GitHub.
+
+In the terminal, open a new tab.
+
+Then, use the cd command to navigate to your site's directory.
+
+Now that you're inside of your site's directory, initialize a Git repository with the following command:
+
+'git init'
+
+- Add the Remote
+
+Next, Git needs to know what repo will store your site's content.
+
+In this case, the repo will be the one you created on GitHub earlier.
+
+To specify the repo using Git, we'll have to add the remote and label it as the origin.
+
+The remote is the URL of the repo that will store your site's contents.
+
+The origin is an alias for the remote. 
+You can think of an alias as an abbreviation or a substitute name. 
+This means that instead of having to always type the lengthy remote URL over and over again, you can simply refer to it as origin later on.
+
+In the terminal, you can add the remote with the following command:
+
+'git remote add origin https://github.com/your-user-name/your-user-name.github.io.git'
+
+Again, you would replace your-user-name with your actual GitHub username.
+
+
